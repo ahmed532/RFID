@@ -1,0 +1,16 @@
+LOCAL "auth" server:
+(1) put the auth.php on your web server, put the door_json.txt JSON file containing your key data there too. 
+(2) to re-program the keys, you just update  or replace the door_json.txt file with revised data. ( either manually, or with google docs ) 
+(3) if you are using google docs integration, put the "doorupdate.php" script in the web server too, and follow the below steps to setup your docs integration. 
+
+DOCS INTEGRATION  (OPTIONAL): 
+(1)  Create a google docs spreadsheet.
+(2) In column1 put the RFID Keycodes, and in column2 put the key-holders name.
+(3) Use the "Tools -> Script manager" to create a new script, and paste the contents of the .js script there.
+(4) Search in the script for "your.auth.server", and replace it with the public DNS name or IP of your "authentication server"
+(5) Make sure your "auth server" is running a secure web server ( on port 443 ) , or update the .js script to point to the right place
+(6) Search for "secret = " ( wthout the quotes)  in the uploaded .js script , and update the secret string you use there to match the one you put in your doorupdate.php script.
+(7) Save everything, and after the spreadsheet is loaded, a *new menu option* should exist called "Report to Auth Server" -> "Do it now".  Press it after each time you modify the google doc.
+(8) Test it works.
+(9) Setup the sharind settins on the document to be private, and to only be shared with those people who you want ot be able to re-program doors/keys.
+
