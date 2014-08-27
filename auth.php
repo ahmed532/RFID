@@ -1,5 +1,5 @@
 <?php
-if (!$link = mysql_connect('localhost', 'root', 'PassWD51')) {
+if (!$link = mysql_connect('localhost', 'root', 'Moody_22')) {
     echo 'Could not connect to mysql';
     exit;
 }
@@ -36,7 +36,7 @@ while ($row = mysql_fetch_assoc($result)) {
     	echo 'MySQL Error: ' . mysql_error();
     	exit;
 	}
-    echo "O\nB";
+    echo "O\n";
 }
 
 mysql_free_result($result);

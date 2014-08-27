@@ -2,7 +2,7 @@
   $dbhost = 'localhost'; // Unlikely to require changing
   $dbname = 'FablabAuto'; // Modify these...
   $dbuser = 'root'; // ...variables according
-  $dbpass = 'PassWD51'; // ...to your installation
+  $dbpass = 'Moody_22'; // ...to your installation
   $appname = "FablabAuto"; // ...and preference
   mysql_connect($dbhost, $dbuser, $dbpass) or die(mysql_error());
   mysql_select_db($dbname) or die(mysql_error());

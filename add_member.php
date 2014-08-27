@@ -1,5 +1,5 @@
 <?php
-if (!$link = mysql_connect('localhost', 'root', 'PassWD51')) {
+if (!$link = mysql_connect('localhost', 'root', 'Moody_22')) {
     echo 'Could not connect to mysql';
     exit;
 }
